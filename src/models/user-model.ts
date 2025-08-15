@@ -6,6 +6,7 @@ export class User extends Model {
   email!: string;
   senha!: string;
   nome!: string;
+  role!: 'Gerente' | 'Funcionario' | 'Cliente';
 }
 
 User.init(
